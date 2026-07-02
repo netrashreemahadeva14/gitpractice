@@ -58,3 +58,6 @@ elif operation == "/":
         print("Division by zero is not allowed.")
 else:
     print("Invalid operation.")
+
+#if-elif is best used when we have multiple conditions to check and we want to execute a block of code based on the first matching condition. It is more efficient than using multiple if statements because it stops checking conditions once a match is found.
+#match statement is best used when we have a single value to match against multiple patterns and we want to execute a block of code based on the first matching pattern. It is more efficient than using multiple if-elif statements because it stops checking patterns once a match is found.
