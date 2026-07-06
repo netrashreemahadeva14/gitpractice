@@ -11,16 +11,37 @@
 # print(result)
 
 #Example function for **kwargs
-def example_function(*args, **kwargs):
-    print("Positional arguments: ", args)
-    print("Keyword arguments: ", kwargs)    
+# def example_function(*args, **kwargs):
+#     print("Positional arguments: ", args)
+#     print("Keyword arguments: ", kwargs)    
 
-example_function(1, 2, 3, name="John", age=30)
-example_function(1, "banana", "cherry", fruit1="apple", fruit2="banana")
-example_function(1, 2, 3, 4, 5, name="John", age=30, city="New York", country="USA")
+# example_function(1, 2, 3, name="John", age=30)
+# example_function(1, "banana", "cherry", fruit1="apple", fruit2="banana")
+# example_function(1, 2, 3, 4, 5, name="John", age=30, city="New York", country="USA")
 
-#Example function for **kwargs
-def example_function(**kwargs):
-    print("Keyword arguments: ", kwargs)
+# #Example function for **kwargs
+# def example_function(**kwargs):
+#     print("Keyword arguments: ", kwargs)
 
-example_function(name="John", age=30)
+# example_function(name="John", age=30)
+
+#Write a calculator function which takes two numbers and an operation as input and returns the result of the operation.
+def calculator(num1:int, num2:int, operation:str):
+    if operation == "+":
+        return num1 + num2
+    elif operation == "-":
+        return num1 - num2
+    elif operation == "*":
+        return num1 * num2
+    elif operation == "/":
+        if num2 != 0:
+            return num1 / num2
+        else:
+            return "Division by zero is not allowed."
+    else:
+        return "Invalid operation." 
+    
+print(calculator(10, 5, "+"))
+print(calculator(10, 5, "-"))
+print(calculator(10, 5, "*"))
+print(calculator(10, 5, "/"))
